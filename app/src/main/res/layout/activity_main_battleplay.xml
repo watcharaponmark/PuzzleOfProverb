@@ -28,37 +28,36 @@
 
             <EditText
                 android:layout_width="220dp"
-                android:layout_height="wrap_content"
+                android:layout_height="63dp"
                 android:id="@+id/et_P1"
                 android:text="Player1"
                 android:gravity="center_vertical|center_horizontal"
-                android:background="#4b2785c0"
-                android:padding="5dp"
-                android:textColor="@android:color/white" />
+                android:background="@drawable/ua1"
+                android:textColor="@android:color/white"
+                android:paddingLeft="25dp"
+                android:paddingTop="17dp" />
 
             <EditText
                 android:layout_width="220dp"
-                android:layout_height="wrap_content"
+                android:layout_height="63dp"
                 android:id="@+id/et_P2"
                 android:text="Player2"
                 android:gravity="center_vertical|center_horizontal"
-                android:padding="5dp"
-                android:background="#4b2785c0"
-                android:layout_marginTop="20dp"
-                android:textColor="@android:color/white" />
+                android:background="@drawable/ua2"
+                android:textColor="@android:color/white"
+                android:paddingTop="17dp"
+                android:paddingRight="35dp" />
         </LinearLayout>
 
         <Button
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="179dp"
             android:text="เริ่มเกม"
             android:id="@+id/bt_playBattel"
-            android:layout_weight="0.09"
             android:textSize="30dp"
-            android:layout_marginTop="30dp"
-            android:padding="5dp"
             android:textColor="@android:color/white"
-            android:background="#862785c0" />
+            android:background="@drawable/satrtgame"
+            android:paddingBottom="25dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -69,7 +68,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.11"
             android:gravity="center_vertical|center_horizontal"
-            android:layout_marginTop="2dp"
             android:textSize="20dp"
             android:textColor="@android:color/white" />
     </LinearLayout>

@@ -27,23 +27,25 @@
             android:text="เริ่มเล่น"
             android:id="@+id/bt_play1"
             android:layout_weight="0.07"
-            android:padding="5dp"
-            android:textSize="30dp"
+            android:textSize="32dp"
             android:textColor="@android:color/white"
             android:focusable="false"
             android:allowUndo="false"
-            android:background="#862785c0" />
+            android:background="@drawable/bt1"
+            android:paddingLeft="80dp"
+            android:paddingTop="18dp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Battle Mode"
             android:id="@+id/bt_battle1"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="0dp"
             android:layout_weight="0.07"
-            android:padding="5dp"
             android:textSize="30dp"
             android:textColor="@android:color/white"
-            android:background="#862785c0" />
+            android:background="@drawable/bt2"
+            android:paddingRight="90dp"
+            android:paddingTop="20dp" />
     </LinearLayout>
 </RelativeLayout>

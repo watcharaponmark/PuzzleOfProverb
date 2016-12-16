@@ -18,6 +18,7 @@ public class MainplayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainplayActivity.this,Play.class);
+                intent.putExtra("status","play");
                 startActivity(intent);
             }
         });

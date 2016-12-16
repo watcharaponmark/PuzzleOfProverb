@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.puzzleofproverb.Play"
+    android:background="@drawable/bg2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6f4d271d">
+
+            <Button
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:id="@+id/bt_cost"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="คะแนน"
+                android:id="@+id/tv_score_1"
+                android:textSize="18dp"
+                android:layout_alignTop="@+id/tv_time"
+                android:layout_toRightOf="@+id/bt_cost"
+                android:layout_toEndOf="@+id/bt_cost"
+                android:layout_alignBottom="@+id/bt_cost"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:id="@+id/tv_score2"
+                android:textSize="18dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tv_score_1"
+                android:layout_toEndOf="@+id/tv_score_1"
+                android:layout_alignBottom="@+id/tv_score_1"
+                android:layout_marginLeft="12dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="01:00"
+                android:id="@+id/tv_time"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="386dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="76dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+                    android:src="@android:drawable/sym_def_app_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/tv_Q"
+                    android:layout_weight="0.65"
+                    android:textColor="@android:color/white"
+                    android:background="#4b2785c0"
+                    android:gravity="center_vertical" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/bt_a1"
+                    android:layout_weight="0.06"
+                    android:textColor="@android:color/white"
+                    android:gravity="center|center_vertical"
+                    android:background="#4b2785c0"
+                    android:layout_marginTop="7dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/bt_a2"
+                    android:layout_weight="0.06"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="#4b2785c0"
+                    android:layout_marginTop="5dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/bt_a3"
+                    android:layout_weight="0.06"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="#4b2785c0"
+                    android:layout_marginTop="5dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/bt_a4"
+                    android:layout_weight="0.06"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="#4b2785c0"
+                    android:layout_marginTop="5dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/bt_a5"
+                    android:layout_weight="0.06"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="#4b2785c0"
+                    android:layout_marginTop="5dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/bt_a6"
+                    android:layout_weight="0.06"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="#4b2785c0"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

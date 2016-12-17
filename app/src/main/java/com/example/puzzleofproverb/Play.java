@@ -72,8 +72,10 @@ public class Play extends AppCompatActivity {
                 public void onClick(View view) {
 
                     if(random.getmCOL_Ans().equals(random.getmCOL_Choice1())){
-                        //MediaPlayer player =MediaPlayer.create(Play.this,R.raw.);
-                        //player.start();
+
+                        MediaPlayer player =MediaPlayer.create(Play.this,R.raw.correct1);
+                        player.start();
+
                         if(testScore==mScore) {
                             mScore++;
                             tv_score2.setText(Integer.toString(mScore));
@@ -120,6 +122,8 @@ public class Play extends AppCompatActivity {
                             startActivity(intentc);
                         }
                     }else{
+                       MediaPlayer player =MediaPlayer.create(Play.this,R.raw.wrong2);
+                        player.start();
                         count=0;
                         testScore=0;
                         random = mQAList.getRandomQA();

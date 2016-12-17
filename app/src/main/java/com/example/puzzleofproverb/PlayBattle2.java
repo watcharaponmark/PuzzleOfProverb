@@ -14,8 +14,6 @@ import com.example.puzzleofproverb.model.QA;
 import com.example.puzzleofproverb.model.QAList;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
 
 public class PlayBattle2 extends AppCompatActivity {
 
@@ -36,7 +34,7 @@ public class PlayBattle2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_battle2);
         final Intent intent=getIntent();
-        String status = intent.getStringExtra("status");
+
         arrqa1=new ArrayList<Integer>(intent.getIntegerArrayListExtra("arrqa1"));
         final TextView tv_t1=(TextView) findViewById(R.id.tv_t1_b2);
         final TextView tv_t2=(TextView) findViewById(R.id.tv_t1_b2);

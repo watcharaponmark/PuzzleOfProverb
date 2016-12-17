@@ -1,6 +1,7 @@
 package com.example.puzzleofproverb;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,8 @@ public class MainBattleplayActivity extends AppCompatActivity {
         bt_playBattel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                MediaPlayer player =MediaPlayer.create(MainBattleplayActivity.this,R.raw.click);
+                player.start();
                 Intent intent = new Intent(MainBattleplayActivity.this, PlayBattle1.class);
                 intent.putExtra("et_P1",et_P1.getText().toString());
                 intent.putExtra("et_P2",et_P2.getText().toString());

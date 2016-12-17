@@ -13,9 +13,17 @@ public class GameOver extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_over);
+
         Button bt_score=(Button) findViewById(R.id.bt_score);
         Button cose=(Button) findViewById(R.id.bt_coseGOV);
         Button  bt_Replay=(Button)  findViewById(R.id.bt_Replay);
+        TextView tv_GameOver=(TextView)findViewById(R.id.tv_GameOver) ;
+        Intent intent = getIntent();
+        String score= intent.getStringExtra("score");
+        bt_score.setText("คะแนน :"+score);
+        if(Integer.parseInt(score)==10){
+            tv_GameOver.setBackgroundResource(R.drawable.winn);
+        }
         cose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,8 +39,7 @@ public class GameOver extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Intent intent = getIntent();
-        String score= intent.getStringExtra("score");
-        bt_score.setText(score);
+
+
     }
 }

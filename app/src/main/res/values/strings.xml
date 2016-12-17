@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">PuzzleOfProverb</string>
-    <string name="app_play">คุณมีเวลา 1 นาที ในการตอบคำถาม ให้ถูกต้องให้มากที่สุด หากคุณตั้งสติพร้อมแล้วก็ไปกันได้เลย</string>
+    <string name="app_play">คุณมีเวลา 1 นาที ในการตอบคำถาม <br> ให้ถูกต้องให้มากที่สุด <br> </br> หากคุณตั้งสติพร้อมแล้วก็ไปกันได้เลย</br> </string>
     <string name="app_playBattel">เอาผู้เล่นอีกคนไปเก็บตัว<br> (เล่นอย่าให้เขาเห็นนะ)</br></string>
+    <string name="app_playBattel_pl2">เอ้า! เอาผู้เล่นอีกคน<br>มาเล่นได้</br></string>
 </resources>
